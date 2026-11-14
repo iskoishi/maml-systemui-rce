@@ -1,0 +1,170 @@
+--------- beginning of main
+11-14 21:37:47.079 D/ScreenElementRoot( 3281): finish
+11-14 21:37:49.243 D/ScreenElementRoot( 3281): findResource: ScaleMetrics sw:1214 den:540 sizeType:0 scale:1.0 path:null
+11-14 21:37:49.243 D/ScreenElementRoot( 3281): findScale: ScaleMetrics sw:1214 den:540 sizeType:0 scale:-1.0
+11-14 21:37:49.243 I/ScreenElementRoot( 3281): set scale: 1.0
+11-14 21:37:49.248 D/ScreenElementRoot( 3281): load finished, spent 5 ms
+11-14 21:37:49.251 D/ScreenElementRoot( 3281): init
+11-14 21:37:49.293 E/ActionCommand( 3281): could not find ScreenElement target, name: null
+11-14 21:37:49.293 D/ActionCommand( 3281): MethodCommand, target=null type=SCREEN_ELEMENT, class=android.util.Log type=SCREEN_ELEMENT, method=d
+11-14 21:37:49.293 D/ActionCommand( 3281):     loadMethod(), successful.  public static int android.util.Log.d(java.lang.String,java.lang.String)
+11-14 21:37:49.293 E/ActionCommand( 3281): could not find ScreenElement target, name: null
+11-14 21:37:49.293 D/ActionCommand( 3281): MethodCommand, target=null type=SCREEN_ELEMENT, class=android.app.ActivityManager type=SCREEN_ELEMENT, method=getService
+11-14 21:37:49.293 D/ActionCommand( 3281):     loadMethod(), successful.  public static android.app.IActivityManager android.app.ActivityManager.getService()
+11-14 21:37:49.293 E/ActionCommand( 3281): MethodCommand, target=ams type=VARIABLE, class=null type=VARIABLE, method=grantRuntimePermission
+11-14 21:37:49.293 E/ActionCommand( 3281):     loadMethod(), class is null.
+11-14 21:37:49.293 E/ActionCommand( 3281): MethodCommand, target=ams type=VARIABLE, class=null type=VARIABLE, method=grantRuntimePermission
+11-14 21:37:49.293 E/ActionCommand( 3281):     loadMethod(), class is null.
+11-14 21:37:49.293 E/ActionCommand( 3281): could not find ScreenElement target, name: null
+11-14 21:37:49.293 D/ActionCommand( 3281): MethodCommand, target=null type=SCREEN_ELEMENT, class=android.util.Log type=SCREEN_ELEMENT, method=d
+11-14 21:37:49.293 D/ActionCommand( 3281):     loadMethod(), successful.  public static int android.util.Log.d(java.lang.String,java.lang.String)
+11-14 21:37:49.295 D/ScreenElementRoot( 3281): resume
+11-14 21:37:49.295 D/ScreenElementRoot( 3281): pause
+11-14 21:37:49.309 D/POC_RCE ( 3281): INIT_RUN
+11-14 21:37:49.309 E/ActionCommand( 3281): MethodCommand, target=ams type=VARIABLE, class=null type=VARIABLE, method=grantRuntimePermission
+11-14 21:37:49.309 E/ActionCommand( 3281):     loadMethod(), class is null.
+11-14 21:37:49.309 E/ActionCommand( 3281): MethodCommand, target=ams type=VARIABLE, class=null type=VARIABLE, method=grantRuntimePermission
+11-14 21:37:49.309 E/ActionCommand( 3281):     loadMethod(), class is null.
+11-14 21:37:49.309 D/POC_RCE ( 3281): GRANT_DONE
+11-14 21:37:50.335 E/ScreenElementRoot( 3281): load error, manifest root is null
+11-14 21:37:50.344 E/ScreenElementRoot( 3281): load error, manifest root is null
+11-14 21:37:50.372 E/ScreenElementRoot( 3281): load error, manifest root is null
+11-14 21:37:50.414 E/ScreenElementRoot( 3281): load error, manifest root is null
+11-14 21:37:50.440 E/ScreenElementRoot( 3281): load error, manifest root is null
+11-14 21:37:50.473 E/ScreenElementRoot( 3281): load error, manifest root is null
+11-14 21:37:50.485 E/ScreenElementRoot( 3281): load error, manifest root is null
+11-14 21:37:50.502 E/ScreenElementRoot( 3281): load error, manifest root is null
+11-14 21:37:50.510 E/ScreenElementRoot( 3281): load error, manifest root is null
+11-14 21:37:50.533 E/ScreenElementRoot( 3281): load error, manifest root is null
+11-14 21:37:50.705 D/ScreenElementRoot( 3281): finish
+11-14 21:37:50.709 D/ScreenElementRoot( 3281): findResource: ScaleMetrics sw:1214 den:540 sizeType:0 scale:1.0 path:null
+11-14 21:37:50.709 D/ScreenElementRoot( 3281): findScale: ScaleMetrics sw:1214 den:540 sizeType:0 scale:-1.0
+11-14 21:37:50.709 I/ScreenElementRoot( 3281): set scale: 1.0
+11-14 21:37:50.710 D/ScreenElementRoot( 3281): load finished, spent 1 ms
+11-14 21:37:50.711 D/ScreenElementRoot( 3281): init
+11-14 21:37:50.723 E/ActionCommand( 3281): could not find ScreenElement target, name: null
+11-14 21:37:50.723 D/ActionCommand( 3281): MethodCommand, target=null type=SCREEN_ELEMENT, class=android.util.Log type=SCREEN_ELEMENT, method=d
+11-14 21:37:50.723 D/ActionCommand( 3281):     loadMethod(), successful.  public static int android.util.Log.d(java.lang.String,java.lang.String)
+11-14 21:37:50.723 E/ActionCommand( 3281): could not find ScreenElement target, name: null
+11-14 21:37:50.723 D/ActionCommand( 3281): MethodCommand, target=null type=SCREEN_ELEMENT, class=android.app.ActivityManager type=SCREEN_ELEMENT, method=getService
+11-14 21:37:50.723 D/ActionCommand( 3281):     loadMethod(), successful.  public static android.app.IActivityManager android.app.ActivityManager.getService()
+11-14 21:37:50.723 E/ActionCommand( 3281): MethodCommand, target=ams type=VARIABLE, class=null type=VARIABLE, method=grantRuntimePermission
+11-14 21:37:50.723 E/ActionCommand( 3281):     loadMethod(), class is null.
+11-14 21:37:50.723 E/ActionCommand( 3281): MethodCommand, target=ams type=VARIABLE, class=null type=VARIABLE, method=grantRuntimePermission
+11-14 21:37:50.723 E/ActionCommand( 3281):     loadMethod(), class is null.
+11-14 21:37:50.723 E/ActionCommand( 3281): could not find ScreenElement target, name: null
+11-14 21:37:50.723 D/ActionCommand( 3281): MethodCommand, target=null type=SCREEN_ELEMENT, class=android.util.Log type=SCREEN_ELEMENT, method=d
+11-14 21:37:50.723 D/ActionCommand( 3281):     loadMethod(), successful.  public static int android.util.Log.d(java.lang.String,java.lang.String)
+11-14 21:37:50.724 D/ScreenElementRoot( 3281): resume
+11-14 21:37:50.725 D/ScreenElementRoot( 3281): pause
+11-14 21:37:51.048 D/POC_RCE ( 3281): INIT_RUN
+11-14 21:37:51.048 E/ActionCommand( 3281): MethodCommand, target=ams type=VARIABLE, class=null type=VARIABLE, method=grantRuntimePermission
+11-14 21:37:51.048 E/ActionCommand( 3281):     loadMethod(), class is null.
+11-14 21:37:51.048 E/ActionCommand( 3281): MethodCommand, target=ams type=VARIABLE, class=null type=VARIABLE, method=grantRuntimePermission
+11-14 21:37:51.048 E/ActionCommand( 3281):     loadMethod(), class is null.
+11-14 21:37:51.048 D/POC_RCE ( 3281): GRANT_DONE
+11-14 21:37:52.384 E/ScreenElementRoot( 3338): load error, manifest root is null
+11-14 21:37:52.953 W/ScreenElementRoot( 3338): set scale: 0.9166667
+11-14 21:37:53.181 W/ScreenElementRoot( 3338): set scale: 0.9166667
+11-14 21:37:53.257 W/ScreenElementRoot( 3338): set scale: 0.9166667
+11-14 21:37:53.287 W/ScreenElementRoot( 3338): set scale: 0.9166667
+11-14 21:37:53.446 W/ScreenElementRoot( 3338): set scale: 0.9166667
+11-14 21:37:59.153 W/ScreenElementRoot( 3281): set scale: 1.0
+11-14 21:37:59.258 D/ScreenElementRoot( 3281): resume
+11-14 21:37:59.413 D/ScreenElementRoot( 3281): pause
+11-14 21:37:59.544 D/ScreenElementRoot( 3281): resume
+11-14 21:38:01.915 D/ScreenElementRoot( 3281): pause
+11-14 21:38:24.367 W/ScreenElementRoot( 3281): set scale: 1.0
+11-14 21:38:24.577 D/ScreenElementRoot( 3281): resume
+11-14 21:38:24.790 D/ScreenElementRoot( 3281): pause
+11-14 21:38:24.949 D/ScreenElementRoot( 3281): resume
+11-14 21:38:28.961 D/ScreenElementRoot( 3281): pause
+11-14 21:40:37.801 D/ScreenElementRoot( 3281): finish
+11-14 21:40:39.885 D/ScreenElementRoot( 3281): findResource: ScaleMetrics sw:1214 den:540 sizeType:0 scale:1.0 path:null
+11-14 21:40:39.885 D/ScreenElementRoot( 3281): findScale: ScaleMetrics sw:1214 den:540 sizeType:0 scale:-1.0
+11-14 21:40:39.885 I/ScreenElementRoot( 3281): set scale: 1.0
+11-14 21:40:39.886 D/ScreenElementRoot( 3281): load finished, spent 10 ms
+11-14 21:40:39.891 D/ScreenElementRoot( 3281): init
+11-14 21:40:39.919 E/ActionCommand( 3281): could not find ScreenElement target, name: null
+11-14 21:40:39.919 D/ActionCommand( 3281): MethodCommand, target=null type=SCREEN_ELEMENT, class=android.app.ActivityManager type=SCREEN_ELEMENT, method=getService
+11-14 21:40:39.919 D/ActionCommand( 3281):     loadMethod(), successful.  public static android.app.IActivityManager android.app.ActivityManager.getService()
+11-14 21:40:39.919 E/ActionCommand( 3281): could not find ScreenElement target, name: null
+11-14 21:40:39.919 D/ActionCommand( 3281): MethodCommand, target=null type=SCREEN_ELEMENT, class=android.util.Log type=SCREEN_ELEMENT, method=d
+11-14 21:40:39.919 D/ActionCommand( 3281):     loadMethod(), successful.  public static int android.util.Log.d(java.lang.String,java.lang.String)
+11-14 21:40:39.920 E/ActionCommand( 3281): MethodCommand, target=ams type=VARIABLE, class=null type=VARIABLE, method=grantRuntimePermission
+11-14 21:40:39.920 E/ActionCommand( 3281):     loadMethod(), class is null.
+11-14 21:40:39.920 E/ActionCommand( 3281): MethodCommand, target=ams type=VARIABLE, class=null type=VARIABLE, method=grantRuntimePermission
+11-14 21:40:39.920 E/ActionCommand( 3281):     loadMethod(), class is null.
+11-14 21:40:39.920 E/ActionCommand( 3281): could not find ScreenElement target, name: null
+11-14 21:40:39.920 D/ActionCommand( 3281): MethodCommand, target=null type=SCREEN_ELEMENT, class=android.util.Log type=SCREEN_ELEMENT, method=d
+11-14 21:40:39.920 D/ActionCommand( 3281):     loadMethod(), successful.  public static int android.util.Log.d(java.lang.String,java.lang.String)
+11-14 21:40:39.936 D/ScreenElementRoot( 3281): resume
+11-14 21:40:39.937 D/ScreenElementRoot( 3281): pause
+11-14 21:40:39.963 D/POC_RCE ( 3281): STAGE_GET_SERVICE
+11-14 21:40:41.005 E/ScreenElementRoot( 3281): load error, manifest root is null
+11-14 21:40:41.020 E/ScreenElementRoot( 3281): load error, manifest root is null
+11-14 21:40:41.033 E/ScreenElementRoot( 3281): load error, manifest root is null
+11-14 21:40:41.054 E/ScreenElementRoot( 3281): load error, manifest root is null
+11-14 21:40:41.070 E/ScreenElementRoot( 3281): load error, manifest root is null
+11-14 21:40:41.081 E/ScreenElementRoot( 3281): load error, manifest root is null
+11-14 21:40:41.102 E/ScreenElementRoot( 3281): load error, manifest root is null
+11-14 21:40:41.115 E/ScreenElementRoot( 3281): load error, manifest root is null
+11-14 21:40:41.244 D/ScreenElementRoot( 3281): finish
+11-14 21:40:41.248 D/ScreenElementRoot( 3281): findResource: ScaleMetrics sw:1214 den:540 sizeType:0 scale:1.0 path:null
+11-14 21:40:41.248 D/ScreenElementRoot( 3281): findScale: ScaleMetrics sw:1214 den:540 sizeType:0 scale:-1.0
+11-14 21:40:41.248 I/ScreenElementRoot( 3281): set scale: 1.0
+11-14 21:40:41.248 D/ScreenElementRoot( 3281): load finished, spent 2 ms
+11-14 21:40:41.250 D/ScreenElementRoot( 3281): init
+11-14 21:40:41.263 E/ActionCommand( 3281): could not find ScreenElement target, name: null
+11-14 21:40:41.263 D/ActionCommand( 3281): MethodCommand, target=null type=SCREEN_ELEMENT, class=android.app.ActivityManager type=SCREEN_ELEMENT, method=getService
+11-14 21:40:41.263 D/ActionCommand( 3281):     loadMethod(), successful.  public static android.app.IActivityManager android.app.ActivityManager.getService()
+11-14 21:40:41.263 E/ActionCommand( 3281): could not find ScreenElement target, name: null
+11-14 21:40:41.263 D/ActionCommand( 3281): MethodCommand, target=null type=SCREEN_ELEMENT, class=android.util.Log type=SCREEN_ELEMENT, method=d
+11-14 21:40:41.263 D/ActionCommand( 3281):     loadMethod(), successful.  public static int android.util.Log.d(java.lang.String,java.lang.String)
+11-14 21:40:41.263 E/ActionCommand( 3281): MethodCommand, target=ams type=VARIABLE, class=null type=VARIABLE, method=grantRuntimePermission
+11-14 21:40:41.263 E/ActionCommand( 3281):     loadMethod(), class is null.
+11-14 21:40:41.263 E/ActionCommand( 3281): MethodCommand, target=ams type=VARIABLE, class=null type=VARIABLE, method=grantRuntimePermission
+11-14 21:40:41.263 E/ActionCommand( 3281):     loadMethod(), class is null.
+11-14 21:40:41.263 E/ActionCommand( 3281): could not find ScreenElement target, name: null
+11-14 21:40:41.263 D/ActionCommand( 3281): MethodCommand, target=null type=SCREEN_ELEMENT, class=android.util.Log type=SCREEN_ELEMENT, method=d
+11-14 21:40:41.263 D/ActionCommand( 3281):     loadMethod(), successful.  public static int android.util.Log.d(java.lang.String,java.lang.String)
+11-14 21:40:41.264 D/ScreenElementRoot( 3281): resume
+11-14 21:40:41.264 D/ScreenElementRoot( 3281): pause
+11-14 21:40:41.590 D/POC_RCE ( 3281): STAGE_GET_SERVICE
+11-14 21:40:43.013 E/ScreenElementRoot( 3338): load error, manifest root is null
+11-14 21:40:43.346 W/ScreenElementRoot( 3338): set scale: 0.9166667
+11-14 21:40:43.364 W/ScreenElementRoot( 3338): set scale: 0.9166667
+11-14 21:40:43.405 W/ScreenElementRoot( 3338): set scale: 0.9166667
+11-14 21:40:43.625 W/ScreenElementRoot( 3338): set scale: 0.9166667
+11-14 21:40:43.787 W/ScreenElementRoot( 3338): set scale: 0.9166667
+11-14 21:40:45.579 W/ScreenElementRoot( 3281): set scale: 1.0
+11-14 21:40:45.813 D/ScreenElementRoot( 3281): resume
+11-14 21:40:45.839 E/ActionCommand( 3281): MethodCommand, target=ams type=VARIABLE, class=null type=VARIABLE, method=grantRuntimePermission
+11-14 21:40:45.839 E/ActionCommand( 3281):     loadMethod(), class is null.
+11-14 21:40:45.839 E/ActionCommand( 3281): MethodCommand, target=ams type=VARIABLE, class=null type=VARIABLE, method=grantRuntimePermission
+11-14 21:40:45.839 E/ActionCommand( 3281):     loadMethod(), class is null.
+11-14 21:40:45.839 D/POC_RCE ( 3281): STAGE_GRANT_TRIED
+11-14 21:40:45.983 D/ScreenElementRoot( 3281): pause
+11-14 21:40:46.127 D/ScreenElementRoot( 3281): resume
+11-14 21:40:46.135 E/ActionCommand( 3281): MethodCommand, target=ams type=VARIABLE, class=null type=VARIABLE, method=grantRuntimePermission
+11-14 21:40:46.135 E/ActionCommand( 3281):     loadMethod(), class is null.
+11-14 21:40:46.135 E/ActionCommand( 3281): MethodCommand, target=ams type=VARIABLE, class=null type=VARIABLE, method=grantRuntimePermission
+11-14 21:40:46.135 E/ActionCommand( 3281):     loadMethod(), class is null.
+11-14 21:40:46.135 D/POC_RCE ( 3281): STAGE_GRANT_TRIED
+11-14 21:40:51.581 D/ScreenElementRoot( 3281): pause
+11-14 21:41:09.954 W/ScreenElementRoot( 3281): set scale: 1.0
+11-14 21:41:10.663 D/ScreenElementRoot( 3281): resume
+11-14 21:41:10.670 E/ActionCommand( 3281): MethodCommand, target=ams type=VARIABLE, class=null type=VARIABLE, method=grantRuntimePermission
+11-14 21:41:10.670 E/ActionCommand( 3281):     loadMethod(), class is null.
+11-14 21:41:10.670 E/ActionCommand( 3281): MethodCommand, target=ams type=VARIABLE, class=null type=VARIABLE, method=grantRuntimePermission
+11-14 21:41:10.670 E/ActionCommand( 3281):     loadMethod(), class is null.
+11-14 21:41:10.670 D/POC_RCE ( 3281): STAGE_GRANT_TRIED
+11-14 21:41:10.769 D/ScreenElementRoot( 3281): pause
+11-14 21:41:11.038 D/ScreenElementRoot( 3281): resume
+11-14 21:41:11.043 E/ActionCommand( 3281): MethodCommand, target=ams type=VARIABLE, class=null type=VARIABLE, method=grantRuntimePermission
+11-14 21:41:11.043 E/ActionCommand( 3281):     loadMethod(), class is null.
+11-14 21:41:11.043 E/ActionCommand( 3281): MethodCommand, target=ams type=VARIABLE, class=null type=VARIABLE, method=grantRuntimePermission
+11-14 21:41:11.043 E/ActionCommand( 3281):     loadMethod(), class is null.
+11-14 21:41:11.043 D/POC_RCE ( 3281): STAGE_GRANT_TRIED
+11-14 21:41:15.973 D/ScreenElementRoot( 3281): pause
+11-14 21:42:29.000 E/ScreenElementRoot( 3281): load error, manifest root is null
