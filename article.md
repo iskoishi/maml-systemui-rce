@@ -174,10 +174,10 @@ E/ActionCommand:  cause: java.lang.NullPointerException: println needs a message
 | 版本 | 证据类型 | 结论 |
 |---|---|---|
 | HyperOS **OS2.0.6.0.UMQCNXM**（Android 14，本文验证机） | 真机运行 + 静态 | 反射执行成立（日志、pid、渲染全部实测） |
-| HyperOS **OS4.0.6.0.XPNCNXM**（Android 17 / SDK 37，固件 `super.img`，`build.prop` 实测） | 纯静态 | `ActionCommand$MethodCommand` / `BaseMethodCommand` 结构与 2.0.6 **逐指令等价**：`Class.forName` → `getMethod` → `Method.invoke` 三步完整保留；无白名单、无 `IS_DEBUGGABLE` 开关、无签名校验；`ReflectionHelper` 的 9 个反射句柄（含 `setAccessible`）全部还在 |
+| HyperOS **OS4.0.6.0.XPNCNXM**（Android 17 / SDK 37，固件镜像 `super.img` 内 `build.prop` 读出；**未真机验证**） | 纯静态 | `ActionCommand$MethodCommand` / `BaseMethodCommand` 结构与 2.0.6 **逐指令等价**：`Class.forName` → `getMethod` → `Method.invoke` 三步完整保留；无白名单、无 `IS_DEBUGGABLE` 开关、无签名校验；`ReflectionHelper` 的 9 个反射句柄（含 `setAccessible`）全部还在 |
 
 - 4.0.6 的 SystemUI：`MiuiSystemUI.apk` 52,007,560 B，SHA-256 `9b577948b8fa3267548a464d91e03a9ac964280bbb40c1612302d7eff6dce695`；659 个 `com.miui.maml.*` 类全部位于其中的 `classes3.dex`。
-- 即：这不是某个旧版本遗留的代码路径，**跨两个大版本持续存在**。
+- 即：这不是某个旧版本遗留的代码路径，**跨两个大版本持续存在**（代码层面确认，4.0.6 未真机验证）。
 - 局限：4.0.6 只做了静态对照，未在真机验证；其它机型、其它版本未取素材，不做外推。
 - 时间线：2026-11-14 完成 2.0.6 真机验证与 4.0.6 静态对照；本机无补丁。
 
