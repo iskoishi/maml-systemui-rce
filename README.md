@@ -19,6 +19,7 @@ MIUI / HyperOS 的锁屏主题（MAML）清单里，`<MethodCommand class="..." 
 | [`evidence/logcat.txt`](evidence/logcat.txt) | 真机 logcat 原始输出（170 行，未删改） |
 | [`evidence/hashes.md`](evidence/hashes.md) | 设备版本、SystemUI APK / dex 哈希 |
 | [`timeline.md`](timeline.md) | 时间线与厂商响应记录 |
+| [`tools/maml-purifier.py`](tools/maml-purifier.py) | 主题净化器：导入/应用前剥离锁屏 MAML 的反射命令（防御工具） |
 
 ## 快速验证（无害）
 
