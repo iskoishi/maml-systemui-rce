@@ -135,7 +135,7 @@ E/ActionCommand:  cause: java.lang.NullPointerException: println needs a message
 |---|---|
 | 权限 | 无需 root、无需 shell、无需任何系统授权（执行侧） |
 | 触发条件 | 仅需"恶意锁屏包出现在锁屏资源位置 + 被加载一次"；**执行侧不消耗任何权限** |
-| 投递前置（前提，非洞本身） | 用户"安装并应用了一个主题"（任意分发途径）。投递与执行分离：即使投递需要特定手段，漏洞本体仍是"主题被加载后在 SystemUI 内反射执行" |
+| 投递前置（前提，非洞本身） | 攻击者前置。本次研究实测的投递需要 **shell** 权限（把恶意锁屏资源写入设备并触发应用）；执行侧无需任何权限。投递与执行分离：漏洞本体是"主题被加载后在 SystemUI 内反射执行" |
 | 上下文 | `com.android.systemui`，uid 1000，SELinux `system_app` |
 | 能力 | 任意类的静态方法调用（**真机已证明**：`Log.d` 实际打出 `STAGE1_ALIVE`）；拿到对象后可调实例方法（静态推断，未真机验证）；参数完全可控 |
 | SystemUI 持有 | `GRANT_RUNTIME_PERMISSIONS`、`WRITE_SECURE_SETTINGS`、`INTERACT_ACROSS_USERS`、可见性极高的系统服务句柄 |
