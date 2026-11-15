@@ -1,7 +1,7 @@
 # MAML 锁屏反射执行面（HyperOS 2.0.6 / 4.0.6）
 
 > 状态：**未修复**（截至 2026-11-14）
-> 影响：本地（需应用一个第三方主题）→ `com.android.systemui`（uid 1000 / user system）代码执行
+> 影响：本地（投递需 shell 权限 + 需应用一个第三方主题）→ `com.android.systemui`（uid 1000 / user system）代码执行
 > 边界：不涉及 root；SELinux 域仍为 `system_app`
 
 ## 这是什么
