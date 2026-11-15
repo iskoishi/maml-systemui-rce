@@ -133,8 +133,9 @@ E/ActionCommand:  cause: java.lang.NullPointerException: println needs a message
 
 | 维度 | 说明 |
 |---|---|
-| 权限 | 无需 root、无需 shell、无需任何系统授权 |
-| 前置 | 用户"安装并应用了一个主题" |
+| 权限 | 无需 root、无需 shell、无需任何系统授权（执行侧） |
+| 触发条件 | 仅需"恶意锁屏包出现在锁屏资源位置 + 被加载一次"；**执行侧不消耗任何权限** |
+| 投递前置（前提，非洞本身） | 用户"安装并应用了一个主题"（任意分发途径）。投递与执行分离：即使投递需要特定手段，漏洞本体仍是"主题被加载后在 SystemUI 内反射执行" |
 | 上下文 | `com.android.systemui`，uid 1000，SELinux `system_app` |
 | 能力 | 任意类的静态方法调用；拿到对象后可调实例方法；参数完全可控 |
 | SystemUI 持有 | `GRANT_RUNTIME_PERMISSIONS`、`WRITE_SECURE_SETTINGS`、`INTERACT_ACROSS_USERS`、可见性极高的系统服务句柄 |
@@ -173,7 +174,7 @@ E/ActionCommand:  cause: java.lang.NullPointerException: println needs a message
 | 版本 | 证据类型 | 结论 |
 |---|---|---|
 | HyperOS **OS2.0.6.0.UMQCNXM**（Android 14，本文验证机） | 真机运行 + 静态 | 反射执行成立（日志、pid、渲染全部实测） |
-| HyperOS **OS4.0.6.0.XPNCNXM**（Android 17 固件 `super.img`） | 纯静态 | `ActionCommand$MethodCommand` / `BaseMethodCommand` 结构与 2.0.6 **逐指令等价**：`Class.forName` → `getMethod` → `Method.invoke` 三步完整保留；无白名单、无 `IS_DEBUGGABLE` 开关、无签名校验；`ReflectionHelper` 的 9 个反射句柄（含 `setAccessible`）全部还在 |
+| HyperOS **OS4.0.6.0.XPNCNXM**（Android 17 / SDK 37，固件 `super.img`，`build.prop` 实测） | 纯静态 | `ActionCommand$MethodCommand` / `BaseMethodCommand` 结构与 2.0.6 **逐指令等价**：`Class.forName` → `getMethod` → `Method.invoke` 三步完整保留；无白名单、无 `IS_DEBUGGABLE` 开关、无签名校验；`ReflectionHelper` 的 9 个反射句柄（含 `setAccessible`）全部还在 |
 
 - 4.0.6 的 SystemUI：`MiuiSystemUI.apk` 52,007,560 B，SHA-256 `9b577948b8fa3267548a464d91e03a9ac964280bbb40c1612302d7eff6dce695`；659 个 `com.miui.maml.*` 类全部位于其中的 `classes3.dex`。
 - 即：这不是某个旧版本遗留的代码路径，**跨两个大版本持续存在**。
